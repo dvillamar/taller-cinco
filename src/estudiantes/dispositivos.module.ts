@@ -7,7 +7,7 @@ import { Dispositivo } from './entities/dispositivo.entity';
 @Module({
   providers: [DispositivosResolver, DispositivosService],
   imports:[
-    TypeOrmModule.forFeature([Dispositivo])
+    TypeOrmModule.forFeature([Dispositivo])   
   ]
 })
 export class DispositivosModule {}
