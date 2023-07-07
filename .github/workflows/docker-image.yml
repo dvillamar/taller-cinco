@@ -40,10 +40,10 @@ jobs:
         NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |
         docker build -t villamar11/taller5:$NEW_VERSION .
-        docker build -t villamar11/taller5:1.1.1.1 .
+        docker build -t villamar11/taller5:latest .
     - name: Push Docker Image
       env:
         NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |
         docker push villamar11/taller5:$NEW_VERSION
-        docker push villamar11/taller5:1.1.1.1
+        docker push villamar11/taller5:latest
